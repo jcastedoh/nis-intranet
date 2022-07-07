@@ -1,0 +1,23 @@
+name: Drupal 9 Theme
+type: theme
+description: 'Used for NIS Intranet Site'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+
+libraries:
+  - bootstrap_barrio_subtheme/bootstrap_cdn
+  - bootstrap_barrio_subtheme/global-styling
+
+regions:
+  pre_header: 'Pre-Header'
+  header: Header
+  highlighted: Highlighted
+  content: Content
+  sidebar: 'Sidebar'
+  footer: 'Footer'
+
+# Information added by Drupal.org packaging script on 2021-10-11
+version: '5.5.4'
+project: 'bootstrap_barrio'
+datestamp: 1633918196

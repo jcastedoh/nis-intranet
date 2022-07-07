@@ -1,0 +1,55 @@
+{# {% extends "@bootstrap_barrio/layout/page.html.twig" %} #}
+
+{% block head %}
+        {% if page.pre_header %}
+          <nav{{ navbar_top_attributes }}>
+          {% if container_navbar %}
+          <div class="container">
+          {% endif %}
+              {{ page.pre_header }}
+          {% if container_navbar %}
+          </div>
+          {% endif %}
+          </nav>
+        {% endif %}
+        <nav{{ navbar_attributes }}>
+          {% if container_navbar %}
+          <div class="container">
+          {% endif %}
+            {{ page.header }}
+          {% if container_navbar %}
+          </div>
+          {% endif %}
+        </nav>
+{% endblock %}
+
+{% block content %}
+        <div id="main" class="{{ container }}">
+          <div class="row row-offcanvas row-offcanvas-left clearfix">
+              <main{{ content_attributes }}>
+                <section class="section">
+                  {{ page.highlighted }}
+                  <a id="main-content" tabindex="-1"></a>
+                  {{ page.content }}
+                </section>
+              </main>
+            {% if page.sidebar %}
+              <div{{ sidebar_attributes }}>
+                <aside class="section" role="complementary">
+                  {{ page.sidebar }}
+                </aside>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+{% endblock %}
+
+{% block footer %}
+        <div class="{{ container }}">
+          {% if page.footer %}
+            <div class="site-footer clearfix">
+              {{ page.footer }}
+            </div>
+          {% endif %}
+        </div>
+{% endblock %}
