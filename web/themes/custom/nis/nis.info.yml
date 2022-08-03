@@ -1,0 +1,20 @@
+name: NIS Intranet
+type: theme
+description: 'Used for NIS Intranet Site'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+
+libraries:
+  - nis/bootstrap_cdn
+  - nis/global-styling
+
+regions:
+  custom_search: "Search"
+  pre_header: "Pre Header"
+  header: "Header"
+  hero: "Hero"
+  content: "Content"
+  sidebar: "Sidebar"
+  pre_footer: "Pre Footer"
+  footer: "Footer"

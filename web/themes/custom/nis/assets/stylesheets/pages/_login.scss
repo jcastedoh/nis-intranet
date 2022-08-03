@@ -1,0 +1,105 @@
+.page-user-login,
+.page-user-password {
+  #main {
+    #block-illuminatingdesign2020-content {
+      a {
+        color: $blue;
+      }
+
+      .form-control {
+        box-shadow: none;
+      }
+
+      .user-login-form,
+      .user-pass {
+        margin: 150px auto;
+        border: 4px solid $yellow;
+
+        p {
+          &:not(.login-title) {
+            padding: 10px 25px;
+          }
+        }
+
+        .login-title {
+          background-color: $yellow;
+          color: $dark-blue;
+          font-family: $bookAntiqua;
+          font-weight: $bold;
+          font-size: 20px;
+        }
+
+        .js-form-type-textfield {
+          padding: 0 25px;
+
+          @media (max-width: $screen-min-md) {
+            width: 100%;
+          }
+
+          label {
+            font-family: $bookAntiqua;
+            font-weight: $medium;
+            font-size: 14px;
+          }
+
+          input {
+            font-family: $bookAntiqua;
+
+            @media (max-width: $screen-min-md) {
+              width: 100%;
+            }
+          }
+        }
+        .js-form-type-password {
+          padding: 0 25px;
+
+          @media (max-width: $screen-min-md) {
+            width: 100%;
+          }
+
+          label {
+            font-family: $bookAntiqua;
+            font-weight: $medium;
+            font-size: 14px;
+          }
+
+          input {
+            font-family: $bookAntiqua;
+
+            @media (max-width: $screen-min-md) {
+              width: 100%;
+            }
+          }
+        }
+
+        .forgot-password {
+          top: 0;
+          margin: 0;
+
+          @media (max-width: $screen-min-md) {
+            margin-left: 25px;
+          }
+        }
+
+        .form-actions {
+          margin: 10px 25px 20px 25px;
+
+          .button {
+            @media (max-width: $screen-min-sm) {
+              margin-top: 25px;
+            }
+          }
+        }
+      }
+    }
+    #block-taxonomytermview {
+      display: none;
+    }
+  }
+}
+.path-user {
+  .profile {
+    text-align: center;
+    margin: 100px;
+  }
+}

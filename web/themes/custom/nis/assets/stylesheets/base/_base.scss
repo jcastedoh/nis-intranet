@@ -1,0 +1,152 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin-left: 50px;
+  background-image: url("../assets/images/texture-bg.jpg");
+}
+
+h1 {
+  font-family: $grotesque-normal;
+  font-weight: $bold;
+  font-size: 100px;
+  color: $cyan-blue;
+
+  @media (max-width: $screen-lg) {
+    font-size: 90px;
+  }
+
+  @media (max-width: $screen-md) {
+    font-size: 80px;
+  }
+
+  @media (max-width: $screen-sm) {
+    font-size: 70px;
+  }
+}
+
+h2 {
+  font-family: $bernhard;
+  font-weight: $medium;
+  font-size: 53px;
+  color: $yellow;
+
+  @media (max-width: $screen-lg) {
+    font-size: 50px;
+  }
+
+  @media (max-width: $screen-md) {
+    font-size: 47px;
+  }
+
+  @media (max-width: $screen-sm) {
+    font-size: 44px;
+  }
+}
+
+h3 {
+  font-family: $bernhard;
+  font-weight: $medium;
+  font-size: 32px;
+  color: $cyan-blue;
+
+  @media (max-width: $screen-lg) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $screen-md) {
+    font-size: 28px;
+  }
+
+  @media (max-width: $screen-sm) {
+    font-size: 26px;
+  }
+}
+
+p {
+  font-family: $bookAntiqua;
+  font-weight: $regular;
+  font-size: 20px;
+  color: $dark;
+}
+
+#main {
+  min-height: 550px;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid $dark-white;
+  padding: 8px 16px 8px;
+  font-family: $bernhard;
+  font-size: 14px;
+  color: $orange;
+  text-transform: uppercase;
+  outline: none;
+  border-radius: 0;
+  letter-spacing: 3px;
+
+  @media (max-width: 575px) {
+    letter-spacing: 0.5px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $cyan-blue;
+    background-color: $cyan-blue;
+    color: $orange;
+    text-decoration: none;
+  }
+
+  &:after {
+    background-image: url("../assets/images/right-arrow.png");
+    width: 8px;
+    height: 15px;
+    content: '';
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+    bottom: -2px;
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid $cyan-blue;
+  padding: 8px 16px 13px;
+  font-family: $bernhard;
+  font-size: 14px;
+  color: $cyan-blue;
+  text-transform: uppercase;
+  outline: none;
+  border-radius: 0;
+  letter-spacing: 3px;
+
+  &:hover,
+  &:focus {
+    border-color: $cyan-blue;
+    background-color: $cyan-blue;
+    color: $yellow;
+    text-decoration: none;
+  }
+
+  &:after {
+    background-image: url("../assets/images/right-arrow.png");
+    width: 8px;
+    height: 15px;
+    content: '';
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+    bottom: -2px;
+  }
+}
+
+.table td, .table th {
+  padding: 5px 10px;
+  vertical-align: inherit;
+  width: auto;
+}
+

@@ -1,0 +1,53 @@
+/*
+-----------------------------------------------------------------------------------------------------------------------------------
+_style.scss - Main SCSS file where all other modular files are included and together compiled to plain CSS with Gulp Sass compiler
+-----------------------------------------------------------------------------------------------------------------------------------
+ */
+
+// Variables
+@import "variables/variables";
+
+// Base style
+@import "base/base";
+
+// Layouts
+@import "layouts/footer";
+@import "layouts/pre-header";
+@import "layouts/header";
+@import "layouts/homepage-hero";
+@import "layouts/search";
+@import "layouts/internal-hero";
+@import "layouts/footer-image";
+
+// Featured
+@import "featured/accordion";
+@import "featured/slick-slider";
+@import "featured/webform";
+
+// Paragraphs
+@import "paragraphs/section";
+@import "paragraphs/single-cta-button";
+@import "paragraphs/single-title";
+@import "paragraphs/single-video";
+@import "paragraphs/single-image";
+@import "paragraphs/single-gallery";
+@import "paragraphs/single-view";
+@import "paragraphs/artifact";
+@import "paragraphs/full-content";
+
+// Pages
+@import "pages/homepage";
+@import "pages/exhibit-page";
+@import "pages/basic-page";
+@import "pages/contact";
+@import "pages/login";
+@import "pages/search-results";
+
+//Views
+@import "views/the-exhibit";
+
+// Base-theme overrides
+@import "override";
+
+// Base-theme print
+@import "print";

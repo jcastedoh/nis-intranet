@@ -1,0 +1,65 @@
+{# Search #}
+{% if page.custom_search %}
+  {% block custom_search %}
+    <div class="main-search-wrapper">
+      <a href="#" class="close-search">
+        <i class="fa fa-times"></i>
+      </a>
+      {{ page.custom_search }}
+    </div>
+  {% endblock %}
+{% endif %}
+
+<header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t }}">
+
+  {# Pre-Header #}
+  {% if page.pre_header %}
+    {% block pre_header %}
+      <div class="pre-header">
+        {{ page.pre_header }}
+      </div>
+    {% endblock %}
+  {% endif %}
+
+  {# Header #}
+  {% if page.header %}
+    {% block header %}
+      <div class="main-header">
+        {{ page.header }}
+      </div>
+    {% endblock %}
+  {% endif %}
+</header>
+
+<div id="main-wrapper">
+  {% if page.hero %}
+    <div class="hero">
+      {{ page.hero }}
+    </div>
+  {% endif %}
+
+  {% block content %}
+    <div id="main">
+      {% if page.sidebar %}
+        <div class="main-content">
+          <a id="main-content"></a>
+          {{ page.content }}
+        </div>
+        <div class="sidebar">
+          <aside class="section" role="complementary">
+            {{ page.sidebar }}
+          </aside>
+        </div>
+      {% else %}
+        <a id="main-content"></a>
+        {{ page.content }}
+      {% endif %}
+    </div>
+  {% endblock %}
+</div>
+
+<footer class="footer">
+  {% block footer %}
+    {{ page.footer }}
+  {% endblock %}
+</footer>

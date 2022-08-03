@@ -1,0 +1,143 @@
+.path-search-results {
+  .views-exposed-form {
+    margin: 50px 40px 30px 50px;
+    text-align: center;
+
+    .form-control {
+      border-radius: 0;
+    }
+
+    form {
+      display: inline-block;
+      fieldset {
+
+        @media (max-width: $screen-md) {
+          width: 100%;
+        }
+
+        label {
+          display: none;
+        }
+      }
+
+      .form-actions {
+        @media (max-width: $screen-md) {
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+
+        button {
+          padding: 7px 16px 7px;
+          border: 1px solid $cyan-blue;
+          color: $cyan-blue;
+
+
+          &:hover,
+          &:focus {
+            border-color: $cyan-blue;
+            background-color: $cyan-blue;
+            color: $yellow;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .view-search {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .view-empty {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .view-content.row {
+      // margin-left: calc(-50vw + 50%);
+      // margin-right: calc(-50vw + 50%);
+      // padding-left: 80px;
+      // padding-right: 60px;
+
+      @media (max-width: $screen-xl) {
+        padding-left: 80px;
+        padding-right: 40px;
+      }
+
+      @media (max-width: $screen-sm) {
+        padding-left: 60px;
+        padding-right: 40px;
+      }
+
+      h3 {
+        font-size: 50px;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+
+        @media (max-width: $screen-md) {
+          font-size: 38px;
+        }
+
+        @media (max-width: $screen-sm) {
+          font-size: 30px;
+        }
+
+        a {
+          color: $yellow;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .views-row {
+        padding-bottom: 50px;
+        display: block;
+        width: 100%;
+
+        .views-field-title {
+          display: none;
+        }
+
+        .views-field-search-api-excerpt {
+          color: $brown;
+        }
+      }
+    }
+
+    nav {
+      margin-top: 50px;
+      text-align: center;
+
+      ul {
+        display: inline-flex;
+
+        li {
+          a {
+            background-color: transparent;
+            border-color: $black-blue;
+            color: $yellow;
+          }
+
+          span {
+            &.page-link {
+              background-color: transparent;
+              border-color: $black-blue;
+              color: $yellow;
+            }
+          }
+
+          &.active {
+            span {
+              background-color: $black-blue;
+              border-color: $black-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}

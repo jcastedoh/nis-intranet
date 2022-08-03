@@ -1,0 +1,31 @@
+.paragraph-unique-125 {
+  min-height: 550px;
+  //padding: 50px;
+  @media (max-width: $screen-sm) {
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .full-content {
+    margin-top: 12px;
+    p {
+      text-align: left;
+      color: $white;
+      font-family: $latino;
+      font-size: 18px;
+
+      @media (max-width: $screen-md) {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .webform-button--submit {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .form-control::placeholder {
+    color: $yellow;
+  }
+}

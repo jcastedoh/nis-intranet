@@ -1,0 +1,15 @@
+.homepage-hero {
+  min-height: 766px;
+  background-size: contain;
+  background-position: bottom !important;
+  background-repeat: no-repeat;
+  background-color: #082d46;
+
+  @media (max-width: $screen-lg) {
+    min-height: 400px;
+  }
+
+  @media (max-width: $screen-md) {
+    min-height: 300px;
+  }
+}

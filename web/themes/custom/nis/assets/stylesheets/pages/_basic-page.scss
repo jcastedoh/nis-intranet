@@ -1,0 +1,44 @@
+.paragraph-unique-121 {
+  background-color: $cyan-blue;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  p {
+    text-align: left;
+    margin: 50px 0 50px 0 ;
+    color: white;
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 36px;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  ul li::before {
+    content: "\2022";
+    color: $yellow;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+    width: 20px;
+    margin-left: -5px;
+  }
+
+  li {
+    color:white;
+    font-size: 26px;
+  }
+}
+
+.paragraph-section.paragraph-unique-147 {
+  p {
+    color: $yellow;
+    font-size: 22px;
+  }
+}
+

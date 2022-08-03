@@ -1,0 +1,89 @@
+.artifact {
+  text-align: left;
+  margin-bottom: 45px;
+  margin-top: 40px;
+
+
+  .artifact-image {
+    height: 350px;
+    width: 280px;
+    background-size: cover;
+    cursor: pointer;
+    background-position: top center !important;
+    background-repeat: no-repeat;
+
+    &.artifact-modal-image {
+      position: relative;
+
+      &:after {
+        content: "";
+        background-image: url("../assets/images/zoom.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 35px;
+        width: 35px;
+        background-color: rgba($blue, 0.5);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+      }
+    }
+
+    @media (max-width: 991px) {
+      height: 250px;
+      width: 100%;
+    }
+
+    @media (max-width:$screen-sm) {
+      height: 329px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: top !important;
+    }
+  }
+
+  .artifact-content {
+    margin-left: -50px;
+    margin-top: 20px;
+
+    @media (max-width: 1199px) {
+      margin-left: 0;
+    }
+
+    h3 {
+      color: $orange;
+      font-size: 40px;
+      font-family: $grotesque-extra-con;
+      text-transform: uppercase;
+      padding-bottom: 3px;
+
+      @media (max-width: 991px) {
+        font-size: 24px;
+      }
+    }
+
+    h4 {
+      color: $orange;
+      font-family: $bernhard;
+      text-transform: uppercase;
+      font-size: 18px;
+      padding-bottom: 9px;
+
+      @media (max-width: 991px) {
+        font-size: 16px;
+      }
+    }
+
+    p {
+      margin: 0;
+      color: $dark-white;
+      font-family: $latino;
+      padding-top: 37px;
+
+      @media (max-width: 991px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
