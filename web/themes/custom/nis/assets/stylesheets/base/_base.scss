@@ -3,15 +3,10 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  margin-left: 50px;
-  background-image: url("../assets/images/texture-bg.jpg");
-}
-
 h1 {
-  font-family: $grotesque-normal;
+  font-family: $montserrat;
   font-weight: $bold;
-  font-size: 100px;
+  font-size: 42px;
   color: $cyan-blue;
 
   @media (max-width: $screen-lg) {
@@ -28,7 +23,7 @@ h1 {
 }
 
 h2 {
-  font-family: $bernhard;
+  font-family: $montserrat;
   font-weight: $medium;
   font-size: 53px;
   color: $yellow;
@@ -47,7 +42,7 @@ h2 {
 }
 
 h3 {
-  font-family: $bernhard;
+  font-family: $montserrat;
   font-weight: $medium;
   font-size: 32px;
   color: $cyan-blue;
@@ -66,10 +61,11 @@ h3 {
 }
 
 p {
-  font-family: $bookAntiqua;
+  font-family: $montserrat;
   font-weight: $regular;
-  font-size: 20px;
-  color: $dark;
+  font-size: 16px;
+  color: $black;
+  letter-spacing: normal;
 }
 
 #main {
