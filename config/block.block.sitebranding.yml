@@ -1,0 +1,27 @@
+uuid: a8f97551-a84f-4eae-a56b-eea1138b75ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - nis
+third_party_settings:
+  block_class:
+    classes: null
+id: sitebranding
+theme: nis
+region: header
+weight: -1
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

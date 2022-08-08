@@ -1,0 +1,29 @@
+uuid: b892afb3-c75c-4576-836d-6824674130ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.page
+  module:
+    - text
+_core:
+  default_config_hash: KgVkxLl_K3E3lvN6CEoWQIDT0V8J4Mv-fVYrAIc7-FE
+id: node.page.body
+field_name: body
+entity_type: node
+bundle: page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: "<p><span style=\"font-size:11.0pt\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">NIS has been providing a wide range of IT support to USGS since 2016 when the company was awarded the Science Collaboration and Application Support-II (SCAS-II) contract. In July 2021, NIS was awarded the SCAS-III contract to continue supporting USGS for an additional five (5) years. SCAS-III included most of the previous Task Orders that were under SCAS-II as well as new Task Orders to support new customers with a variety of IT-related tasks ranging from application/website development, project management, alternatives analysis and system administration.</span></span></p>\r\n"
+    summary: ''
+    format: full_html
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

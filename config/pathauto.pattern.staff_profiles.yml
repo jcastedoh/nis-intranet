@@ -1,0 +1,22 @@
+uuid: 6a61cdf8-2a15-4d02-9087-50564ce38ea3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: staff_profiles
+label: 'Staff Profiles'
+type: 'canonical_entities:node'
+pattern: '/staff-profile/[node:title]'
+selection_criteria:
+  06ce9aea-5c18-46e4-a76f-cb5d4f2ea024:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 06ce9aea-5c18-46e4-a76f-cb5d4f2ea024
+    context_mapping:
+      node: node
+    bundles:
+      staff_profile: staff_profile
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,39 @@
+uuid: e7fac5e8-8a82-4b94-aa06-71d9d1270cfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.skills.field_proficiency
+    - field.field.paragraph.skills.field_technology
+    - field.field.paragraph.skills.field_years_of_experience
+    - paragraphs.paragraphs_type.skills
+id: paragraph.skills.default
+targetEntityType: paragraph
+bundle: skills
+mode: default
+content:
+  field_proficiency:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_technology:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_years_of_experience:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

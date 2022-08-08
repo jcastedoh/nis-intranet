@@ -1,0 +1,24 @@
+uuid: d92828d1-c2c9-4351-b5e6-e9a7661f7357
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - help
+  theme:
+    - nis
+third_party_settings:
+  block_class:
+    classes: null
+id: help
+theme: nis
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: visible
+  provider: help
+visibility: {  }

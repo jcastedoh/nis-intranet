@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 67386b50-7880-49b0-9e61-e7f3afd57bf2
+name: 'NIS Intranet'
+mail: admin@example.com
+slogan: ''
+page:
+  403: /node/2
+  404: /node/1
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

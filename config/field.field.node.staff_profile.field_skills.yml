@@ -1,0 +1,31 @@
+uuid: 34d12e8b-45d8-401a-8a1a-fda30fdf5e21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_skills
+    - node.type.staff_profile
+    - paragraphs.paragraphs_type.skills
+  module:
+    - entity_reference_revisions
+id: node.staff_profile.field_skills
+field_name: field_skills
+entity_type: node
+bundle: staff_profile
+label: Skills
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      skills: skills
+    negate: 0
+    target_bundles_drag_drop:
+      skills:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

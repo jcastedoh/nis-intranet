@@ -1,0 +1,21 @@
+uuid: aafb25c3-5960-41b8-98fd-b35b4e373ee9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_please_list_any_skills_tec
+    - node.type.staff_profile
+  module:
+    - text
+id: node.staff_profile.field_please_list_any_skills_tec
+field_name: field_please_list_any_skills_tec
+entity_type: node
+bundle: staff_profile
+label: 'Please list any skills/technologies that you would like to learn/attend training for and become proficient in'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

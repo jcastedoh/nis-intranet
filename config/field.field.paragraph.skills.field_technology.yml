@@ -1,0 +1,29 @@
+uuid: 3dff8189-5c23-4a27-85fa-65b0fb525dcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_technology
+    - paragraphs.paragraphs_type.skills
+    - taxonomy.vocabulary.technology
+id: paragraph.skills.field_technology
+field_name: field_technology
+entity_type: paragraph
+bundle: skills
+label: Technology
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      technology: technology
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

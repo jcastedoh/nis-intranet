@@ -1,0 +1,36 @@
+uuid: a4a3b0bb-77f8-45a6-abe6-6873aa1235d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_years_of_it_experience
+field_name: field_years_of_it_experience
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: '0 Years'
+    -
+      value: '4'
+      label: '1 - 4 Years'
+    -
+      value: '9'
+      label: '5 - 9 Years'
+    -
+      value: '14'
+      label: '10 - 14 Years'
+    -
+      value: '15'
+      label: '15+ Years'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,65 @@
+uuid: 66ace6f4-da07-4e80-b1f5-5d71da05781c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.staff_profile.body
+    - field.field.node.staff_profile.field_certifications_training_pl
+    - field.field.node.staff_profile.field_description_of_duties_resp
+    - field.field.node.staff_profile.field_education
+    - field.field.node.staff_profile.field_email_s_
+    - field.field.node.staff_profile.field_first_name
+    - field.field.node.staff_profile.field_is_someone_on_the_team_des
+    - field.field.node.staff_profile.field_job_title
+    - field.field.node.staff_profile.field_last_name
+    - field.field.node.staff_profile.field_name_s_of_your_backup_s_
+    - field.field.node.staff_profile.field_phone_number_s_
+    - field.field.node.staff_profile.field_please_list_any_additional
+    - field.field.node.staff_profile.field_please_list_any_skills_tec
+    - field.field.node.staff_profile.field_profile_image
+    - field.field.node.staff_profile.field_skills
+    - field.field.node.staff_profile.field_task_order_s_
+    - field.field.node.staff_profile.field_years_of_it_experience
+    - node.type.staff_profile
+  module:
+    - text
+    - user
+id: node.staff_profile.teaser
+targetEntityType: node
+bundle: staff_profile
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_certifications_training_pl: true
+  field_description_of_duties_resp: true
+  field_education: true
+  field_email_s_: true
+  field_firs: true
+  field_first_name: true
+  field_is_someone_on_the_team_des: true
+  field_job_title: true
+  field_las: true
+  field_last_name: true
+  field_name_s_of_your_backup_s_: true
+  field_phone_number_s_: true
+  field_ple: true
+  field_please_list_any_additional: true
+  field_please_list_any_skills_tec: true
+  field_profile_image: true
+  field_skills: true
+  field_task_order_s_: true
+  field_years_of_it_experience: true

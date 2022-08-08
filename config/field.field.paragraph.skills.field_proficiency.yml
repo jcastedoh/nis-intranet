@@ -1,0 +1,29 @@
+uuid: 90523ef8-17fd-41fe-b1df-e88ed27c97d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_proficiency
+    - paragraphs.paragraphs_type.skills
+    - taxonomy.vocabulary.proficiency
+id: paragraph.skills.field_proficiency
+field_name: field_proficiency
+entity_type: paragraph
+bundle: skills
+label: Proficiency
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      proficiency: proficiency
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

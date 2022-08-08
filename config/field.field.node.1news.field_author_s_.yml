@@ -1,0 +1,29 @@
+uuid: b6c0dd1d-dcf8-411a-bcda-079bbbe93de2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_s_
+    - node.type.1news
+    - node.type.staff_profile
+id: node.1news.field_author_s_
+field_name: field_author_s_
+entity_type: node
+bundle: 1news
+label: Author(s)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      staff_profile: staff_profile
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

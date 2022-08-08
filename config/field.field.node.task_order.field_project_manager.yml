@@ -1,0 +1,29 @@
+uuid: d3742e9f-2c18-4e4d-9daf-bfc387ee6e59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_manager
+    - node.type.staff_profile
+    - node.type.task_order
+id: node.task_order.field_project_manager
+field_name: field_project_manager
+entity_type: node
+bundle: task_order
+label: 'Project Manager'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      staff_profile: staff_profile
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: f473b4ac-58de-4522-aea1-0423721d5f91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_certifications_training_pl
+    - node.type.staff_profile
+  module:
+    - text
+id: node.staff_profile.field_certifications_training_pl
+field_name: field_certifications_training_pl
+entity_type: node
+bundle: staff_profile
+label: 'Certifications/Training (Please also specify if certs are Active or Expired/Expiring + Year)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

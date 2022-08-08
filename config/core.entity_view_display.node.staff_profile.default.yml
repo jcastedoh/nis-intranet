@@ -1,0 +1,191 @@
+uuid: fd8a7d4e-ca31-43d8-9669-ef87705dcb8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.staff_profile.body
+    - field.field.node.staff_profile.field_certifications_training_pl
+    - field.field.node.staff_profile.field_description_of_duties_resp
+    - field.field.node.staff_profile.field_education
+    - field.field.node.staff_profile.field_email_s_
+    - field.field.node.staff_profile.field_first_name
+    - field.field.node.staff_profile.field_is_someone_on_the_team_des
+    - field.field.node.staff_profile.field_job_title
+    - field.field.node.staff_profile.field_last_name
+    - field.field.node.staff_profile.field_name_s_of_your_backup_s_
+    - field.field.node.staff_profile.field_phone_number_s_
+    - field.field.node.staff_profile.field_please_list_any_additional
+    - field.field.node.staff_profile.field_please_list_any_skills_tec
+    - field.field.node.staff_profile.field_profile_image
+    - field.field.node.staff_profile.field_skills
+    - field.field.node.staff_profile.field_task_order_s_
+    - field.field.node.staff_profile.field_years_of_it_experience
+    - node.type.staff_profile
+  module:
+    - entity_reference_revisions
+    - image
+    - options
+    - text
+    - user
+id: node.staff_profile.default
+targetEntityType: node
+bundle: staff_profile
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_certifications_training_pl:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 25
+    region: content
+  field_description_of_duties_resp:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  field_education:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 26
+    region: content
+  field_email_s_:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_firs:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_first_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_is_someone_on_the_team_des:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_job_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_las:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_last_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_name_s_of_your_backup_s_:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 24
+    region: content
+  field_phone_number_s_:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 29
+    region: content
+  field_please_list_any_additional:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 27
+    region: content
+  field_please_list_any_skills_tec:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 28
+    region: content
+  field_profile_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 30
+    region: content
+  field_skills:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 31
+    region: content
+  field_task_order_s_:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_years_of_it_experience:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_ple: true

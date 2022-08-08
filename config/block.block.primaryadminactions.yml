@@ -1,0 +1,23 @@
+uuid: b1f5eaf0-63cc-4c5e-aa3c-3e3db53f36b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - nis
+third_party_settings:
+  block_class:
+    classes: null
+id: primaryadminactions
+theme: nis
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

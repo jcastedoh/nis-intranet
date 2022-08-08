@@ -1,0 +1,19 @@
+uuid: ad91a719-182f-4787-a521-3156c929c39f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_description_of_duties_resp
+field_name: field_description_of_duties_resp
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

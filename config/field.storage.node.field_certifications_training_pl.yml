@@ -1,0 +1,19 @@
+uuid: 7d31072a-15b0-4b95-a4d5-9d7021760d3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_certifications_training_pl
+field_name: field_certifications_training_pl
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

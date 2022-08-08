@@ -1,0 +1,28 @@
+uuid: 61dc687b-482e-4b3e-9546-d700f33a8535
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_s_of_your_backup_s_
+    - node.type.staff_profile
+id: node.staff_profile.field_name_s_of_your_backup_s_
+field_name: field_name_s_of_your_backup_s_
+entity_type: node
+bundle: staff_profile
+label: 'Name(s) of your backup(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      staff_profile: staff_profile
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

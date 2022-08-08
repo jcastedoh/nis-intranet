@@ -1,0 +1,29 @@
+uuid: e844c0b4-03b4-43e0-b424-a6f1c918ddbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_years_of_experience
+    - paragraphs.paragraphs_type.skills
+    - taxonomy.vocabulary.yeas
+id: paragraph.skills.field_years_of_experience
+field_name: field_years_of_experience
+entity_type: paragraph
+bundle: skills
+label: 'Years of Experience'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      yeas: yeas
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

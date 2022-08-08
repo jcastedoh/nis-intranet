@@ -1,0 +1,23 @@
+uuid: b4bff6fd-f8dc-444c-bc23-451300698068
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - nis
+third_party_settings:
+  block_class:
+    classes: null
+id: pagetitle
+theme: nis
+region: hero
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

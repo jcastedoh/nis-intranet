@@ -1,0 +1,21 @@
+uuid: ea126a5d-2678-434f-a983-c7d1c08f551b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_of_duties_resp
+    - node.type.staff_profile
+  module:
+    - text
+id: node.staff_profile.field_description_of_duties_resp
+field_name: field_description_of_duties_resp
+entity_type: node
+bundle: staff_profile
+label: 'Description of Duties/Responsibilities'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,39 @@
+uuid: 50e5e770-315f-482a-ae38-fae1808127cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.skills.field_proficiency
+    - field.field.paragraph.skills.field_technology
+    - field.field.paragraph.skills.field_years_of_experience
+    - paragraphs.paragraphs_type.skills
+id: paragraph.skills.default
+targetEntityType: paragraph
+bundle: skills
+mode: default
+content:
+  field_proficiency:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_technology:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_years_of_experience:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

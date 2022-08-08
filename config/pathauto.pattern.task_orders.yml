@@ -1,0 +1,22 @@
+uuid: 7f03ed56-2af2-45a9-9c74-9ac10ed53469
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: task_orders
+label: 'Task Orders'
+type: 'canonical_entities:node'
+pattern: '/task-order/[node:title]'
+selection_criteria:
+  9d6edc08-5478-4a0f-9ac8-d371ca8c501b:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 9d6edc08-5478-4a0f-9ac8-d371ca8c501b
+    context_mapping:
+      node: node
+    bundles:
+      task_order: task_order
+selection_logic: and
+weight: -5
+relationships: {  }

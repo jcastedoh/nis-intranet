@@ -1,0 +1,29 @@
+uuid: a5f00e3e-a7a4-4250-8670-6657b3b2c796
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_order_s_
+    - node.type.staff_profile
+    - node.type.task_order
+id: node.staff_profile.field_task_order_s_
+field_name: field_task_order_s_
+entity_type: node
+bundle: staff_profile
+label: 'Task Order(s)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      task_order: task_order
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

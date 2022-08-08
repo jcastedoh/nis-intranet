@@ -1,0 +1,21 @@
+uuid: ea076757-3cf0-4cbe-8b7a-32103e146553
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_please_list_any_additional
+    - node.type.staff_profile
+  module:
+    - text
+id: node.staff_profile.field_please_list_any_additional
+field_name: field_please_list_any_additional
+entity_type: node
+bundle: staff_profile
+label: 'Please list any additional skills/technologies that you are familiar with below, along with your level of expertise'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

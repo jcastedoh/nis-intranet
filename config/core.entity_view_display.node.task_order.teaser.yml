@@ -1,0 +1,34 @@
+uuid: f812aff6-aa03-4796-9e58-458cc089bb22
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.task_order.body
+    - field.field.node.task_order.field_deputy_program_manager
+    - field.field.node.task_order.field_project_manager
+    - node.type.task_order
+  module:
+    - text
+    - user
+id: node.task_order.teaser
+targetEntityType: node
+bundle: task_order
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_deputy_program_manager: true
+  field_project_manager: true
