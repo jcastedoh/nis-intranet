@@ -1,0 +1,7 @@
+nis_import.code_test:
+  path: '/admin/config/development/nis_import/code-test'
+  defaults:
+    _title: 'Coding Test'
+    _controller: '\Drupal\nis_import\Helpers\CodeTestController::test'
+  requirements:
+    _access: 'TRUE'

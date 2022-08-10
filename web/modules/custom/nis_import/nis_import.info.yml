@@ -1,0 +1,6 @@
+name: NIS Import
+type: module
+description: NIS Import
+package: Others
+core_version_requirement: ^9.2 || ^10
+version: '8.x-1.0'
