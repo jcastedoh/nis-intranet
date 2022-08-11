@@ -29,6 +29,12 @@ class InternalHero extends BlockBase {
       case '/form/contact-us':
         $title = 'Contact Us';
         break;
+      case '/task-orders':
+        $title = 'Task Orders';
+        break;
+      case '/staff-directory':
+        $title = 'Staff Directory';
+        break;
       default:
         $node = \Drupal::routeMatch()->getParameter('node');
         if ($node instanceof \Drupal\node\NodeInterface) {

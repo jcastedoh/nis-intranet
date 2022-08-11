@@ -79,7 +79,7 @@ p {
 }
 
 #main {
-  min-height: 550px;
+  min-height: 300px;
 }
 
 .btn-primary {
@@ -130,3 +130,8 @@ p {
   width: auto;
 }
 
+.clear {
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+}

@@ -1,1 +1,148 @@
+#block-views-block-news-block-1 {
+  .news-card {
+    margin-bottom: 25px;
+    border: 1px solid rgb(213,213,213);
+    min-height: 194px;
+    overflow: hidden;
+    .news-image {
+      float: left;
+      width: 30%;
+      height: 245px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      img {
+        display: none;
+      }
+    }
+    .news-content {
+      width: 70%;
+      float: right;
+      padding: 15px 25px;
+      h3 {
+        a {
+          text-decoration: none;
+          color: rgb(0, 34, 81);
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.view-id-staff_directory {
+
+  fieldset.form-item-search {
+    float: left;
+    width: 75%;
+  }
+
+  #edit-actions {
+    float: right;
+    width: 25%;
+    margin-top: 28px;
+  }
+
+  .view-content {
+    clear: both;
+  }
+
+  .views-row {
+    float: left;
+    width: 33%;
+  }
+  .staff-card {
+    margin-bottom: 25px;
+    border: 1px solid rgb(213,213,213);
+    min-height: 160px;
+    overflow: hidden;
+    .staff-image {
+      float: left;
+      width: 40%;
+      height: 160px;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      img {
+        display: none;
+      }
+    }
+    .staff-content {
+      width: 60%;
+      float: right;
+      padding: 15px 25px;
+      h3 {
+        a {
+          text-decoration: none;
+          color: rgb(0, 34, 81);
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.main-content {
+  &.with-sidebar {
+    width: 75%;
+    float: left;
+    padding-right: 25px;
+  }
+}
+
+.sidebar {
+  width: 25%;
+  float: right;
+  margin-top: 10px;
+  #block-views-block-news-block-2 {
+    background: none;
+    .update-card {
+      padding: 25px 0px;
+      border-bottom: 1px solid rgb(213,213,213);
+      p {
+        margin: 0px;
+        padding: 0px;
+      }
+    }
+    h2 {
+      font-family: $nunito;
+      font-weight: $regular;
+      font-size: 35px;
+      color: $black;
+    }
+    h3 {
+      a {
+        text-decoration: none;
+        color: rgb(0, 34, 81);
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.view-task-orders {
+  .view-content {
+    clear: both;
+    h3 {
+      padding: 15px 0px;
+      border-bottom: 1px dotted rgb(213,213,213);
+      a {
+        text-decoration: none;
+        color: rgb(0, 34, 81);
+        font-size: 20px;
+      }
+    }
+  }
+
+  fieldset.form-item-task-order {
+    float: left;
+    width: 75%;
+  }
+
+  #edit-actions {
+    float: right;
+    width: 25%;
+    margin-top: 28px;
+  }
+}
 
