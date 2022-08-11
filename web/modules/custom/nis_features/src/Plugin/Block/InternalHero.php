@@ -3,6 +3,7 @@
 namespace Drupal\nis_features\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\node\Entity\Node;
 
 /**
  * Provides a Hero Internal Block.
@@ -22,10 +23,25 @@ class InternalHero extends BlockBase {
     $module_handler = \Drupal::service('module_handler');
     $module_path = $module_handler->getModule('nis_features')->getPath();
 
+    $uri = $_SERVER['REQUEST_URI'];
+    $title = '';
+    switch ($uri) {
+      case '/form/contact-us':
+        $title = 'Contact Us';
+        break;
+      default:
+        $node = \Drupal::routeMatch()->getParameter('node');
+        if ($node instanceof \Drupal\node\NodeInterface) {
+          $node = Node::load($node->id());
+          $title = $node->getTitle();
+        }
+        break;
+    }
+
     $hero = [
-      'title' => 'Test',
-      'intro_text' => 'Hello World',
-      'header_image' => $module_path . '/assets/images/default.png',
+      'title' => $title,
+      'intro_text' => '',
+      'header_image' => '/' . $module_path . '/assets/images/default.png',
       'hero_class' => 'custom-hero',
       'bgxpos' => 'center',
       'bgypos' => 'center',

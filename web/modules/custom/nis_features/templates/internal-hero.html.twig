@@ -1,45 +1,15 @@
-{% set title = '' %}
-{% set intro_text = '' %}
-{% set header_image = '' %}
-{% set feature_image = '' %}
-{% set feature_image_title = '' %}
-{% set hero_bottom_class = '' %}
-
-{% if hero.title is not empty %}
-  {% set title = hero.title %}
-{% endif %}
-
-{% if hero.intro_text is not empty %}
-  {% set intro_text = hero.intro_text %}
-{% endif %}
-
-{% if hero.header_image is not empty %}
-  {% set header_image = hero.header_image %}
-{% endif %}
-
-{% if hero.feature_image is not empty %}
-  {% set feature_image = hero.feature_image %}
-{% endif %}
-
-{% if hero.feature_image_title is not empty %}
-  {% set feature_image_title = hero.feature_image_title %}
-{% endif %}
-
-{{ kint(hero) }}
-
-
 <div class="internal-hero-wrapper">
   <div class="hero-light"></div>
 
-  <div class="hero-top-part" style='{{ header_image.background }}'>
-    <h1 class="internal-hero-title">{{ title }}</h1>
+  <div class="hero-top-part" style='background-image: url("{{ hero.header_image }}")'>
+    <h1 class="internal-hero-title">{{ hero.title }}</h1>
   </div>
 
   <div class="hero-bottom-part">
     <div class="container">
       <div class="row">
         <div class="col-md-8 text-wrapper">
-          {{ intro_text|raw }}
+          {{ hero.intro_text|raw }}
         </div>
       </div>
     </div>
