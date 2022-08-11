@@ -1,0 +1,6 @@
+name: NIS
+type: module
+description: NIS
+package: Others
+core_version_requirement: ^9.2 || ^10
+version: '9.x-1.0'

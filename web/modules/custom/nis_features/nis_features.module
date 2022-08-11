@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function nis_features_theme($existing, $type, $theme, $path) {
+  return [
+    'internal_hero' => [
+      'variables' => [
+        'hero' => NULL,
+      ]
+    ],
+  ];
+}

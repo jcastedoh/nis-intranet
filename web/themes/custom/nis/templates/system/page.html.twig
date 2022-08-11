@@ -31,13 +31,15 @@
   {% endif %}
 </header>
 
-<div id="main-wrapper">
+<div id="main-hero">
   {% if page.hero %}
     <div class="hero">
       {{ page.hero }}
     </div>
   {% endif %}
+</div>
 
+<div id="main-wrapper">
   {% block content %}
     <div id="main">
       {% if page.sidebar %}

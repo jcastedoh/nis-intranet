@@ -24,7 +24,7 @@
         .login-title {
           background-color: $yellow;
           color: $dark-blue;
-          font-family: $bookAntiqua;
+          font-family: $montserrat;
           font-weight: $bold;
           font-size: 20px;
         }
@@ -37,13 +37,13 @@
           }
 
           label {
-            font-family: $bookAntiqua;
+            font-family: $montserrat;
             font-weight: $medium;
             font-size: 14px;
           }
 
           input {
-            font-family: $bookAntiqua;
+            font-family: $montserrat;
 
             @media (max-width: $screen-min-md) {
               width: 100%;
@@ -58,13 +58,13 @@
           }
 
           label {
-            font-family: $bookAntiqua;
+            font-family: $montserrat;
             font-weight: $medium;
             font-size: 14px;
           }
 
           input {
-            font-family: $bookAntiqua;
+            font-family: $montserrat;
 
             @media (max-width: $screen-min-md) {
               width: 100%;

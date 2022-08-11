@@ -3,11 +3,21 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  background-color: $white;
+  #main-wrapper {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 25px 0px;
+  }
+
+}
+
 h1 {
-  font-family: $montserrat;
+  font-family: $nunito;
   font-weight: $bold;
   font-size: 42px;
-  color: $cyan-blue;
+  color: $black;
 
   @media (max-width: $screen-lg) {
     font-size: 90px;
@@ -23,10 +33,10 @@ h1 {
 }
 
 h2 {
-  font-family: $montserrat;
-  font-weight: $medium;
-  font-size: 53px;
-  color: $yellow;
+  font-family: $nunito;
+  font-weight: $regular;
+  font-size: 35px;
+  color: $black;
 
   @media (max-width: $screen-lg) {
     font-size: 50px;
@@ -42,10 +52,10 @@ h2 {
 }
 
 h3 {
-  font-family: $montserrat;
+  font-family: $nunito;
   font-weight: $medium;
   font-size: 32px;
-  color: $cyan-blue;
+  color: $black;
 
   @media (max-width: $screen-lg) {
     font-size: 30px;
@@ -61,7 +71,7 @@ h3 {
 }
 
 p {
-  font-family: $montserrat;
+  font-family: $nunito;
   font-weight: $regular;
   font-size: 16px;
   color: $black;
@@ -73,38 +83,23 @@ p {
 }
 
 .btn-primary {
-  background-color: transparent;
-  border: 1px solid $dark-white;
-  padding: 8px 16px 8px;
-  font-family: $bernhard;
+  background-color: rgba(177, 31, 35, 0.93);
+  border: 1px solid rgba(177, 31, 35, 0.93);
+  padding: 0px;
+  font-family: $montserrat;
   font-size: 14px;
-  color: $orange;
-  text-transform: uppercase;
+  color: $white;
+  text-transform: capitalize;
   outline: none;
-  border-radius: 0;
-  letter-spacing: 3px;
-
-  @media (max-width: 575px) {
-    letter-spacing: 0.5px;
-  }
+  border-radius: 5px;
+  width: 120px;
 
   &:hover,
   &:focus {
-    border-color: $cyan-blue;
-    background-color: $cyan-blue;
-    color: $orange;
+    border-color: rgba(177, 31, 35, 0.93);
+    background-color: $white;
+    color: rgba(177, 31, 35, 0.93);
     text-decoration: none;
-  }
-
-  &:after {
-    background-image: url("../assets/images/right-arrow.png");
-    width: 8px;
-    height: 15px;
-    content: '';
-    display: inline-block;
-    margin-left: 15px;
-    position: relative;
-    bottom: -2px;
   }
 }
 
@@ -112,7 +107,7 @@ p {
   background-color: transparent;
   border: 1px solid $cyan-blue;
   padding: 8px 16px 13px;
-  font-family: $bernhard;
+  font-family: $montserrat;
   font-size: 14px;
   color: $cyan-blue;
   text-transform: uppercase;
@@ -126,17 +121,6 @@ p {
     background-color: $cyan-blue;
     color: $yellow;
     text-decoration: none;
-  }
-
-  &:after {
-    background-image: url("../assets/images/right-arrow.png");
-    width: 8px;
-    height: 15px;
-    content: '';
-    display: inline-block;
-    margin-left: 15px;
-    position: relative;
-    bottom: -2px;
   }
 }
 

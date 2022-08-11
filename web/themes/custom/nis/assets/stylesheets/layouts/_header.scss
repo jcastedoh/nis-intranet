@@ -8,9 +8,38 @@
   }
 }
 
-.main-header {
+#header {
   background-color: $white;
-  .navbar-brand {
-    float: none;
+  border-bottom: 3px solid rgb(177,31,35);
+  padding: 15px 0px;
+  min-height: 100px;
+  .main-header {
+    width: 1115px;
+    margin: 0 auto;
+    a {
+      &.navbar-brand {
+        img {
+          width: 230px;
+        }
+      }
+    }
   }
 }
+
+#block-mainnavigation {
+  width: 835px;
+  float: right;
+  .navbar-we-mega-menu {
+    background: none;
+  }
+  .we-mega-menu-ul>.we-mega-menu-li>a {
+    background: none;
+  }
+  .we-mega-menu-ul .dropdown-menu>a:after, .we-mega-menu-ul .dropdown-menu>span:after {
+    background: none;
+  }
+  .we-mega-menu-ul .dropdown-menu>a:before, .we-mega-menu-ul .dropdown-menu>span:before {
+    background: none;
+  }
+}
+
