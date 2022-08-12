@@ -35,6 +35,9 @@ class InternalHero extends BlockBase {
       case '/staff-directory':
         $title = 'Staff Directory';
         break;
+      case '/form/suggestion-box-':
+        $title = 'Suggestion Box';
+        break;
       default:
         $node = \Drupal::routeMatch()->getParameter('node');
         if ($node instanceof \Drupal\node\NodeInterface) {

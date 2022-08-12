@@ -49,7 +49,7 @@
 
   .views-row {
     float: left;
-    width: 33%;
+    width: 45%;
   }
   .staff-card {
     margin-bottom: 25px;
@@ -58,19 +58,24 @@
     overflow: hidden;
     .staff-image {
       float: left;
-      width: 40%;
-      height: 160px;
+      width: 29%;
+      height: 185px;
       background-position: center center;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       img {
         display: none;
       }
     }
     .staff-content {
-      width: 60%;
+      width: 71%;
       float: right;
       padding: 15px 25px;
+      .list-group-item {
+        margin: 5px 0px;
+        border: none;
+        padding: 0px;
+      }
       h3 {
         a {
           text-decoration: none;
@@ -146,3 +151,65 @@
   }
 }
 
+#block-suggestionbox {
+  background: rgb(213,213,213);
+  padding: 50px;
+  text-align: center;
+  p {
+    color: rgb(0, 34, 81);
+    font-size: 32px;
+    a {
+      background-color: rgba(177, 31, 35, 0.93);
+      border: 1px solid rgba(177, 31, 35, 0.93);
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      color: rgb(255, 255, 254);
+      text-transform: capitalize;
+      outline: none;
+      border-radius: 5px;
+      width: 120px;
+      padding: 15px 25px;
+      text-decoration: none;
+    }
+  }
+}
+
+.view-documents {
+  .view-content {
+    clear: both;
+    h3 {
+      padding: 15px 0px;
+      border-bottom: 1px dotted rgb(213,213,213);
+      a {
+        text-decoration: none;
+        color: rgb(0, 34, 81);
+        font-size: 20px;
+      }
+    }
+  }
+
+  fieldset.form-item-combine {
+    float: left;
+    width: 75%;
+  }
+
+  #edit-actions {
+    float: right;
+    width: 25%;
+    margin-top: 28px;
+  }
+}
+
+.page-node-type-_news {
+  time {
+    font-weight: bold;
+  }
+  .field--name-body {
+    margin: 25px 0px;
+  }
+  .field--name-field-image {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

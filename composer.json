@@ -22,6 +22,7 @@
         "drupal/advagg": "^5.0",
         "drupal/back_to_top": "^2.0",
         "drupal/backup_migrate": "^5.0",
+        "drupal/better_exposed_filters": "^5.2",
         "drupal/block_class": "^2.0",
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/core-composer-scaffold": "^9.4",

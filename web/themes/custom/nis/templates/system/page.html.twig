@@ -62,6 +62,12 @@
 
 <div class="clear"></div>
 
+<div class="pre-footer">
+  {% block pre_footer %}
+    {{ page.pre_footer }}
+  {% endblock %}
+</div>
+
 <footer class="footer">
   {% block footer %}
     {{ page.footer }}

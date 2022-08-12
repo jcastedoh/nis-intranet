@@ -18,6 +18,7 @@ _style.scss - Main SCSS file where all other modular files are included and toge
 @import "layouts/search";
 @import "layouts/internal-hero";
 @import "layouts/footer-image";
+@import "layouts/staff-profile";
 
 // Featured
 @import "featured/webform";

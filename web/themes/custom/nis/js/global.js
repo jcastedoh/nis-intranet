@@ -16,6 +16,8 @@
       $('.view-id-staff_directory .views-row').each(function() {
         $(this).find('.staff-image').attr('style', 'background-image: url(' + $(this).find('img').attr('src') + ')');
       });
+
+      $('.profile .picture').attr('style', 'background-image: url(' + $('.profile .picture img').attr('src') + ')');
     }
   };
 

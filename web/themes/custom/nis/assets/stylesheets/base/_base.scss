@@ -135,3 +135,49 @@ p {
   height: 1px;
   overflow: hidden;
 }
+
+.off-canvas-wrapper {
+  display: none;
+}
+
+.copyright {
+  border-top: 1px solid rgb(177, 31, 35);
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 10px;
+  .left {
+    float: left;
+    font-size: 10px;
+    color: $white;
+    a {
+      text-transform: capitalize;
+      text-decoration: none;
+      font-size: 10px;
+      color: $white;
+    }
+  }
+  .right {
+    float: right;
+    color: $white;
+    font-size: 10px;
+    a {
+      text-transform: capitalize;
+      text-decoration: none;
+      font-size: 10px;
+      color: $white;
+    }
+  }
+}
+
+nav {
+  a {
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  .we-mega-menu-submenu>.we-mega-menu-submenu-inner {
+    min-height: 15px;
+  }
+  .we-mega-menu-submenu li.we-mega-menu-li {
+    width: 100%;
+  }
+}

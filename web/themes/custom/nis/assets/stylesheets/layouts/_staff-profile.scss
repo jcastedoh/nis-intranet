@@ -1,0 +1,68 @@
+.profile {
+  a {
+    text-decoration: none;
+    color: rgb(0, 34, 81);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    padding:0px;
+    li {
+      list-style: none;
+      padding:0px;
+    }
+  }
+
+  div {
+    min-height: 50px;
+  }
+
+
+
+  .left-profile {
+    width: 20%;
+    float: left;
+    .picture {
+      background-position: center center;
+      background-size: cover;
+      height: 250px;
+      background-repeat: no-repeat;
+      img {
+        display: none;
+      }
+    }
+    h5 {
+      margin-top: 25px;
+      padding-top: 15px;
+      border-top: 1px solid rgb(213,213,213);
+      color: rgb(0, 34, 81);
+    }
+    .job-title p {
+      font-weight: bold;
+      text-align: center;
+      font-size: 22px;
+      margin-top: 20px;
+    }
+  }
+  .right-profile {
+    width: 78%;
+    float: right;
+    padding-bottom: 25px;
+    .skills {
+      li {
+        float: left;
+        width: 25%;
+        height: 110px;
+        overflow: hidden;
+        margin-bottom: 25px;
+        padding: 10px;
+      }
+    }
+    h4 {
+      clear: both;
+      color: rgb(177, 31, 35);
+    }
+  }
+}
