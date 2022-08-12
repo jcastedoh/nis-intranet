@@ -38,6 +38,9 @@ class InternalHero extends BlockBase {
       case '/form/suggestion-box-':
         $title = 'Suggestion Box';
         break;
+      case '/':
+        $title = 'NIS/USGS Intranet';
+        break;
       default:
         $node = \Drupal::routeMatch()->getParameter('node');
         if ($node instanceof \Drupal\node\NodeInterface) {

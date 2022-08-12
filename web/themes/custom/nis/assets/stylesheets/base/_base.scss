@@ -1,3 +1,7 @@
+html {
+  background: #041a27;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -179,5 +183,16 @@ nav {
   }
   .we-mega-menu-submenu li.we-mega-menu-li {
     width: 100%;
+  }
+}
+
+
+.feed-icons {
+  display: none;
+}
+
+.page-view-frontpage {
+  #main-wrapper {
+    display: none;
   }
 }
